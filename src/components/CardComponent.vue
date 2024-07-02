@@ -19,6 +19,7 @@ export default defineComponent({
   props: {
     title: {
       type: String,
+      required: true,
     },
     subtitle: {
       type: String,
