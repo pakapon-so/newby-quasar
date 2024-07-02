@@ -1,9 +1,26 @@
 <template>
-  <q-drawer show-if-above side="left" bordered :width="200">
+  <q-drawer
+    show-if-above
+    side="left"
+    bordered
+    :width="200"
+    :mini="miniState"
+    mini-to-overlay
+    @mouseover="miniState = false"
+    @mouseout="miniState = true"
+  >
     <q-scroll-area class="fit">
       <!-- แสดงเมนูในแต่ละหน้า -->
       <q-list bordered>
-        <q-item-label header> รายการในแต่ละหน้า </q-item-label>
+        <!-- <q-item-label header class="text-center">
+          <q-avatar size="100px">
+            <img
+              src="https://th.bing.com/th/id/OIP.-oGKGXKI-sob4RjGEEkIUAHaHa?rs=1&pid=ImgDetMain"
+            />
+          </q-avatar>
+          <br /><br />
+          รายการในแต่ละหน้า
+        </q-item-label> -->
         <template v-for="(menuItem, index) in menuList" :key="index">
           <q-item
             clickable
@@ -52,7 +69,7 @@ export default defineComponent({
   name: 'DrawerComponent',
   setup() {
     return {
-      miniState: ref(false),
+      miniState: ref(true),
       menuList,
     };
   },
