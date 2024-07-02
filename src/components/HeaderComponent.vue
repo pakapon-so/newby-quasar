@@ -7,7 +7,7 @@
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
-          &nbsp;&nbsp;&nbsp; ห้องสมุด by KST
+          &nbsp;&nbsp;&nbsp; เรียนรู้เว็บ Quasar by ปลื้ม-KST
         </q-toolbar-title>
         <!-- <q-input v-model="text" class="q-ma-sm" dense standout dark>
           <template v-slot:append>
