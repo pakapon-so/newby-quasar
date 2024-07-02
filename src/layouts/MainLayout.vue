@@ -7,6 +7,7 @@
     <!-- DrawerComponent -->
     <DrawerComponent v-model="leftDrawerOpen" />
 
+    <!-- ส่วนเนื้อหา -->
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -25,6 +26,12 @@ import FooterComponent from 'components/FooterComponent.vue';
 export default {
   setup() {
     const leftDrawerOpen = ref(false);
+
+    // ตรวจสอบการเปลี่ยนแปลงของค่า leftDrawerOpen
+
+    // watch(leftDrawerOpen, (newVal, oldVal) => {
+    //   console.log('leftDrawerOpen changed from', oldVal, 'to', newVal);
+    // });
 
     return {
       leftDrawerOpen,

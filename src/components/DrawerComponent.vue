@@ -1,15 +1,9 @@
 <template>
-  <q-drawer
-    show-if-above
-    side="left"
-    bordered
-    :width="200"
-    :mini="miniState"
-    @mouseover="miniState = false"
-    @mouseout="miniState = true"
-  >
+  <q-drawer show-if-above side="left" bordered :width="200">
     <q-scroll-area class="fit">
+      <!-- แสดงเมนูในแต่ละหน้า -->
       <q-list bordered>
+        <q-item-label header> รายการในแต่ละหน้า </q-item-label>
         <template v-for="(menuItem, index) in menuList" :key="index">
           <q-item
             clickable
@@ -58,7 +52,7 @@ export default defineComponent({
   name: 'DrawerComponent',
   setup() {
     return {
-      miniState: ref(true),
+      miniState: ref(false),
       menuList,
     };
   },
