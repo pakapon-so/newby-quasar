@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md q-gutter-y-sm">
-    <q-header elevated class="bg-primary text-white">
+    <q-header bordered class="bg-primary text-white">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="$emit('openDrawer')" />
         <q-toolbar-title class="text-center q-ma-sm">

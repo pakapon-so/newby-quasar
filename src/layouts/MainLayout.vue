@@ -13,7 +13,6 @@
     </q-page-container>
 
     <!-- footer  -->
-    <FooterComponent />
   </q-layout>
 </template>
 
@@ -21,7 +20,6 @@
 import { ref } from 'vue';
 import HeaderComponent from 'components/HeaderComponent.vue';
 import DrawerComponent from 'components/DrawerComponent.vue';
-import FooterComponent from 'components/FooterComponent.vue';
 
 export default {
   setup() {
@@ -44,7 +42,6 @@ export default {
   components: {
     HeaderComponent,
     DrawerComponent,
-    FooterComponent,
   },
 };
 </script>
