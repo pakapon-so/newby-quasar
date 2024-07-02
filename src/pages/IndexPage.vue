@@ -1,21 +1,33 @@
 <template>
   <q-page padding>
-    <q-card class="my-card">
-      <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
-      </q-card-section>
-      <q-card-section>
+    <div class="row q-col-gutter-md">
+      <card-component title="Our Changing Planet" subtitle="by John Doe">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eveniet
-        quod eos facere, cumque rem adipisci sint! Blanditiis, ipsa amet aliquam
-        repellendus ullam quis sed. Ab quasi rem id aut!
-      </q-card-section>
-    </q-card>
+        quod eos facere, cumque rem a
+      </card-component>
+      <card-component title="Hightech" subtitle="by Hex Dee">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rerum
+        dolorem officiis molestiae assumenda dolore ab itaque, molestias modi
+        sapiente sunt iste, quod velit doloremque incidunt fugiat quasi quaerat
+        libero.
+      </card-component>
+      <card-component title="finance" subtitle="by Doe Dee">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita a ipsa
+        explicabo officia delectus aspernatur, laudantium aperiam nostrum
+        asperiores quidem. Doloremque harum eaque, assumenda quis saepe
+        accusantium voluptas omnis earum.
+      </card-component>
+    </div>
   </q-page>
 </template>
 
 <script setup lang="ts">
+import CardComponent from 'src/components/CardComponent.vue';
+
 defineOptions({
   name: 'IndexPage',
+  components: {
+    CardComponent,
+  },
 });
 </script>

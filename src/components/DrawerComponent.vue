@@ -43,6 +43,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
+// รายการเมนูในแต่ละหน้า
 const menuList = [
   {
     icon: 'home',

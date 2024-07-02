@@ -25,6 +25,7 @@ export default defineComponent({
   name: 'HeaderComponent',
   setup() {
     return {
+      // ใช้รับค่าจาก input ของผู้ใช้
       text: ref(''),
     };
   },
