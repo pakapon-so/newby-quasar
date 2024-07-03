@@ -22,14 +22,8 @@ import HeaderComponent from 'components/HeaderComponent.vue';
 import DrawerComponent from 'components/DrawerComponent.vue';
 
 export default {
-  setup() {
+  setup () {
     const leftDrawerOpen = ref(false);
-
-    // ตรวจสอบการเปลี่ยนแปลงของค่า leftDrawerOpen
-
-    // watch(leftDrawerOpen, (newVal, oldVal) => {
-    //   console.log('leftDrawerOpen changed from', oldVal, 'to', newVal);
-    // });
 
     return {
       leftDrawerOpen,
@@ -42,6 +36,10 @@ export default {
   components: {
     HeaderComponent,
     DrawerComponent,
+  },
+  mounted() {
+    // ฟังก์ชันที่ทำงานหลังจากที่ component ถูก render
+    this.leftDrawerOpen = false;
   },
 };
 </script>
